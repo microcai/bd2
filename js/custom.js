@@ -3,6 +3,7 @@ $(document).foundation();
 $(document).ready(function(){
 	$("html").niceScroll({ autohidemode: false });
 	$('#menu').localScroll({hash:true, onAfterFirst:function(){$('html, body').scrollTo( {top:'-=25px'}, 'fast' );}});
+	$('.scrollbutton').localScroll({hash:true, onAfterFirst:function(){$('html, body').scrollTo( {top:'-=25px'}, 'fast' );}});
 	$('.flexslider').flexslider({
       animation: "fade",
       directionNav: true,
