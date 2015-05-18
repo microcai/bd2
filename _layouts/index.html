@@ -23,24 +23,11 @@
 </head>
 <body>
 
-{{ page.content }}
-<footer>
-    <div class="row">
-        <div class="large-6 columns">
-            <ul class="inline-list">
-                <li class="copyright">2009 - 2015 &copy; 小海湾C++工作室</a></li>
+{% include top-nav.html %}
 
-            </ul>
-        </div>
-        <div class="large-6 columns">
-            <ul class="inline-list social-media right">
-                <!--<li><a href="http://www.facebook.com/EGrappler" class="icon icon-facebook"></a></li>-->
-                <!--<li><a href="htp://twitter.com/egrappler" class="icon icon-twitter"></a></li>-->
-                <!--<li><a href="https://plus.google.com/102572598506883739879/posts" class="icon icon-googleplus"></a></li>-->
-            </ul>
-        </div>
-    </div>
-</footer>
+{{ page.content }}
+
+{% include footer.html %}
 
 <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
 <script type="text/javascript" src="js/foundation.min.js"></script>
