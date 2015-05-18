@@ -1781,3 +1781,34 @@ you can use the generic selector below, but it's slower:
 	color: red;
 	display:none;
 }
+
+div table {
+	width: 100%;
+	color: #21aded;
+}
+div table thead td{
+	font-size: 30px;
+	border: medium;
+	color: #21aded;
+}
+
+div table td {
+	border: medium;
+	font-size: 26px;
+	color: #21aded;
+	text-align: center;
+}
+
+.table-last-td {
+	width: 40%;
+}
+
+div table  td:first-child {
+	text-align: right;
+}
+
+div table  td:last-child {
+	text-align: left;
+	font-size: 24px;
+	color: #009999;
+}
