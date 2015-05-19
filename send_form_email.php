@@ -12,7 +12,7 @@ function send_email($name,$email,$email_message)
   $message .= "<strong>Message = </strong>".$email_message."<br>";
   @mail($send_email_to, $email_subject, $message,$headers);
   return true;
-}
+}
 function validate($name,$email,$message){
   $return_array = array();
   $return_array['success'] = '1';
@@ -57,10 +57,10 @@ function validate($name,$email,$message){
     }
   }
   return $return_array;
-}
+}
 $name = $_POST['name'];$email = $_POST['email'];
 $message = $_POST['message'];
-
-$return_array = validate($name,$email,$message);
+
+$return_array = validate($name,$email,$message);
 if($return_array['success'] == '1'){	send_email($name,$email,$message);}header('Content-type: text/json');echo json_encode($return_array);die();
-?>
+?>
